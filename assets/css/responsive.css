@@ -554,7 +554,7 @@
 			font-size: 25px !important;
 			top: 105px !important;
 			white-space:revert !important;
-			font-weight: 100 !important;
+			font-weight: 200 !important;
 
 		} 
 		.tp-mask-wrap{
@@ -880,7 +880,7 @@
 		white-space: revert !important;
 		font-size: 13px !important;
 		top: 85px !important;
-		font-weight: 100 !important;
+		font-weight: 200 !important;
 
 	}
 	.tp-mask-wrap{
