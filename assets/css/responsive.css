@@ -218,9 +218,6 @@
 		
 	}
 	.NotGeneric-Title{
-		/* margin-left: 1rem !important;
-		font-size: 21px !important; */
-
 		font-weight: 200 !important;
 		text-align: center !important;
 		font-size: 2.4rem !important;
@@ -228,7 +225,6 @@
 		margin-left: 2rem !important;
 		margin-right: 2rem !important;
 		max-width: 1024px !important;
-
 		margin-block-start: 1em !important;
 		margin-block-end: 1em !important;
 		margin-inline-start: 0px !important;
@@ -248,45 +244,7 @@
 		width: 100% !important;
 		left:26px !important;
 	}
-/*
-	.Agency-Title{
-		line-height: 1.08 !important;
-		font-size: 45px !important;
-		font-weight: bold !important;
-		margin-block-start: 0.67em !important;
-		   margin-block-end: 0.67em !important;
-		margin-inline-start: 0px !important;
-		margin-inline-end: 0px !important;
 
-		text-align: center !important;
-		margin: 2rem 2rem 2rem 2rem !important;
-		max-width: 740px !important;
-		
-
-	}
-	 .NotGeneric-Title{
-
-		white-space: revert !important;
-		top: 105px !important;
-		font-weight: 200 !important;
-		text-align: center !important;
-		font-size: 2.5rem !important;
-		line-height: 1.33 !important;
-		margin-left: 2rem !important;
-		margin-right: 2rem !important;
-		max-width: 744px !important;
-
-		margin-block-start: 1em !important;
-		margin-block-end: 1em !important;
-		margin-inline-start: 0px !important;
-		margin-inline-end: 0px !important;
-		text-transform: capitalize !important;
-
-		font-family: 'Open Sans', sans-serif !important;
-		-webkit-font-smoothing: antialiased !important;
-
-
-	} */
 
 }
 
@@ -677,7 +635,13 @@
 			/* left:0px !important; */
 			top: 375px !important;
 		}
-		
+			/* todo: removing images from about us in mobile view */
+		.img-container{
+			display: none !important;
+		}
+		.relative{
+			padding-bottom: 0px !important;
+		}
 
 }
 
@@ -1044,6 +1008,14 @@
 	.tp-fullwidth-forcer{
 		height: 325px !important;
 	} */
+
+	/* todo: removing images from about us in mobile view */
+	.img-container{
+		display: none !important;
+	}
+	.relative{
+		padding-bottom: 0px !important;
+	}
 }
 
 @media (max-width:320px){
