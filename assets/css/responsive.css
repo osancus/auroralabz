@@ -674,7 +674,7 @@
 		}
 		.tp-parallax-wrap {
 			width: 100% !important;
-			left:0px !important;
+			/* left:0px !important; */
 			top: 375px !important;
 		}
 		
@@ -992,7 +992,7 @@
 		top: 135px !important;
 		font-weight: 200 !important;
 		text-align: center !important;
-		font-size: 1.7rem !important;
+		font-size: 1.5rem !important;
  	   	line-height: 1.33 !important;
     	margin-left: 2rem !important;
     	margin-right: 2rem !important;
