@@ -244,6 +244,9 @@
 		width: 100% !important;
 		left:26px !important;
 	}
+	.btn-dark{
+		margin-top: 74% !important;
+	}
 
 
 }
@@ -642,6 +645,13 @@
 		.relative{
 			padding-bottom: 0px !important;
 		}
+		.btn-dark{
+			margin-top: 333% !important;
+			margin-left: -202px !important;
+		}
+		.col-sm-4 img{
+			height: 100% !important;
+		}
 
 }
 
@@ -1015,6 +1025,23 @@
 	}
 	.relative{
 		padding-bottom: 0px !important;
+	}
+
+	.btn-dark{
+		margin-top: 0px !important;
+
+	}
+	.form-card{
+	width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+	box-shadow: 0 4px 8px 0 rgb(132 132 132 / 52%), 0 6px 20px 0 rgb(132 132 132 / 10%) !important;
+	}
+	.section-title{
+		text-align: center !important;
+	}
+	.section-title p{
+		text-align: justify !important;
 	}
 }
 
