@@ -1090,6 +1090,9 @@
 	.our-service-desktop-section{
 		display: none !important;
 	}
+	.portfolio-description .links {
+		font-size: 14px !important;
+	}
 			
 }
 

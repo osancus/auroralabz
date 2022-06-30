@@ -4339,7 +4339,7 @@ fieldset[disabled] .btn-default.active {
 
 .portfolio-wrap {
   position: absolute;
-  top: 72%;
+  top: 50%;
   left: 0%;
   width: 100%;
   margin-top: -50px;
