@@ -670,8 +670,12 @@
 			padding-bottom: 0px !important;
 		}
 		.btn-dark{
-			margin-top: 333% !important;
-			margin-left: -202px !important;
+			margin-top: 115% !important;
+			padding: 10px 14px !important;
+		}
+		.line-height-50 {
+			line-height: 24px !important;
+			margin-top: 9px !important;
 		}
 		.col-sm-4 img{
 			height: 100% !important;
@@ -690,7 +694,13 @@
 		.section-title{
 			text-align: center !important;
 		}
-
+		.our-service-mobile-view-sub-section{
+			font-size: 22px !important;
+		}
+		
+		.loader{
+		left: 55% !important;
+		}
 
 
 }
@@ -1096,9 +1106,9 @@
 	.our-service-desktop-section{
 		display: none !important;
 	}
-	.portfolio-description .links {
+	/* .portfolio-description .links {
 		font-size: 14px !important;
-	}
+	} */
 	.section-title .mt-30{
 		text-align: center !important;
 
@@ -1111,6 +1121,26 @@
 	}
 	.panel-group .mt-30{
 		text-align: center !important;
+	}
+
+	.payment-img{
+		content: url("../images/portfolio/grid/payments_square.jpg");
+	}
+	.omaxx-img{
+		content: url("../images/portfolio/grid/omaxx_square.jpg");
+	}
+
+	.contacts-section{
+		margin-left: 15% !important;
+	}
+	.our-service-mobile-view-sub-section{
+		font-size: 22px !important;
+	}
+	.contact-us-sec{
+		margin-bottom: 10px !important;
+	}
+	.loader{
+		left: 55% !important;
 	}
 			
 }

@@ -3299,6 +3299,8 @@ input.search-bar-top:-moz-placeholder {
 .img-responsive,
 .full-width {
   width: 100%;
+  margin-left: 10px;
+  margin-top: 30%;
 }
 
 /* Buttons */
