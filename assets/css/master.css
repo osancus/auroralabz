@@ -3299,6 +3299,9 @@ input.search-bar-top:-moz-placeholder {
 .img-responsive,
 .full-width {
   width: 100%;
+  margin-left: 10px;
+  display: inline-block;
+  /* margin-top: 30%; */
 }
 
 /* Buttons */
@@ -3658,7 +3661,7 @@ fieldset[disabled] .btn-default.active {
 .btn-color {
   color: #fff;
   background-color: #1ca7ec;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .btn-color:hover,
@@ -4339,7 +4342,7 @@ fieldset[disabled] .btn-default.active {
 
 .portfolio-wrap {
   position: absolute;
-  top: 72%;
+  top: 50%;
   left: 0%;
   width: 100%;
   margin-top: -50px;

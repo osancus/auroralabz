@@ -1,3 +1,12 @@
+@media (min-width:1199px){
+		/* todo : hide mobile view of Our service section */
+		.our-service-mob-section{
+			display: none !important;
+		}
+		.our-service-desktop-section{
+			display: block !important;
+		}
+}
 @media (max-width:1199px){
     .hero-text h1{font-size:74px;}
     .hero-text h2 {font-size: 55px;}
@@ -200,6 +209,14 @@
   .menu-overlay .menu ul ul {margin-top: 20px;}
   .menu-btn {right: 0;top:0;}
 	.menu-overlay .menu ul li {float: none;margin-bottom: 50px;width: 100%;border-bottom: 1px solid #575757;}
+	/* todo : hide mobile view of Our service section */
+	.our-service-mob-section{
+		display: none !important;
+
+	}
+	.our-service-desktop-section{
+		display: block !important;
+	}
 }
 
 @media (min-width:1024px) and (max-width:1199px){
@@ -218,9 +235,6 @@
 		
 	}
 	.NotGeneric-Title{
-		/* margin-left: 1rem !important;
-		font-size: 21px !important; */
-
 		font-weight: 200 !important;
 		text-align: center !important;
 		font-size: 2.4rem !important;
@@ -228,7 +242,6 @@
 		margin-left: 2rem !important;
 		margin-right: 2rem !important;
 		max-width: 1024px !important;
-
 		margin-block-start: 1em !important;
 		margin-block-end: 1em !important;
 		margin-inline-start: 0px !important;
@@ -248,45 +261,17 @@
 		width: 100% !important;
 		left:26px !important;
 	}
-/*
-	.Agency-Title{
-		line-height: 1.08 !important;
-		font-size: 45px !important;
-		font-weight: bold !important;
-		margin-block-start: 0.67em !important;
-		   margin-block-end: 0.67em !important;
-		margin-inline-start: 0px !important;
-		margin-inline-end: 0px !important;
-
-		text-align: center !important;
-		margin: 2rem 2rem 2rem 2rem !important;
-		max-width: 740px !important;
-		
+	.btn-dark{
+		margin-top: 74% !important;
+	}
+	/* todo : hide mobile view of Our service section */
+	.our-service-mob-section{
+		display: none !important;
 
 	}
-	 .NotGeneric-Title{
-
-		white-space: revert !important;
-		top: 105px !important;
-		font-weight: 200 !important;
-		text-align: center !important;
-		font-size: 2.5rem !important;
-		line-height: 1.33 !important;
-		margin-left: 2rem !important;
-		margin-right: 2rem !important;
-		max-width: 744px !important;
-
-		margin-block-start: 1em !important;
-		margin-block-end: 1em !important;
-		margin-inline-start: 0px !important;
-		margin-inline-end: 0px !important;
-		text-transform: capitalize !important;
-
-		font-family: 'Open Sans', sans-serif !important;
-		-webkit-font-smoothing: antialiased !important;
-
-
-	} */
+	.our-service-desktop-section{
+		display: block !important;
+	}
 
 }
 
@@ -611,7 +596,7 @@
 		/* tablet responsive screen  */
 		.Agency-Title{
 			line-height: 1.08 !important;
-			font-size: 45px !important;
+			font-size: 43px !important;
 			font-weight: bold !important;
 			margin-block-start: 0.67em !important;
    			margin-block-end: 0.67em !important;
@@ -674,10 +659,52 @@
 		}
 		.tp-parallax-wrap {
 			width: 100% !important;
-			left:0px !important;
+			/* left:0px !important; */
 			top: 375px !important;
 		}
+			/* todo: removing images from about us in mobile view */
+		.img-container{
+			display: none !important;
+		}
+		.relative{
+			padding-bottom: 0px !important;
+		}
+		.btn-dark{
+			margin-top: 115% !important;
+			padding: 10px 14px !important;
+		}
+		.line-height-50 {
+			line-height: 24px !important;
+			margin-top: 9px !important;
+		}
+		.col-sm-4 img{
+			height: 100% !important;
+		}
+
+			/* todo : hide mobile view of Our service section */
+		.our-service-mob-section{
+			display: block !important;
+		padding-bottom: 0% !important;
+
+
+		}
+		.our-service-desktop-section{
+			display: none !important;
+		}
+		.section-title{
+			text-align: center !important;
+		}
+		.our-service-mobile-view-sub-section{
+			font-size: 22px !important;
+		}
 		
+		.loader{
+		left: 55% !important;
+		}
+		.cbp-item-off{
+			display: none !important;	
+		}
+
 
 }
 
@@ -992,7 +1019,7 @@
 		top: 135px !important;
 		font-weight: 200 !important;
 		text-align: center !important;
-		font-size: 1.7rem !important;
+		font-size: 1.5rem !important;
  	   	line-height: 1.33 !important;
     	margin-left: 2rem !important;
     	margin-right: 2rem !important;
@@ -1044,6 +1071,81 @@
 	.tp-fullwidth-forcer{
 		height: 325px !important;
 	} */
+
+	/* todo: removing images from about us in mobile view */
+	.img-container{
+		display: none !important;
+	}
+	.relative{
+		padding-bottom: 0px !important;
+		padding-top: 40px !important;
+	}
+
+	.btn-dark{
+		margin-top: 0px !important;
+
+	}
+	.form-card{
+	width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+	box-shadow: 0 4px 8px 0 rgb(132 132 132 / 52%), 0 6px 20px 0 rgb(132 132 132 / 10%) !important;
+	}
+	.section-title{
+		text-align: center !important;
+	}
+	.section-title p{
+		text-align: justify !important;
+		margin: 0rem 1rem 0rem 1rem !important;
+
+	}
+	
+	/* todo : hide mobile view of Our service section */
+	.our-service-mob-section{
+		display: block !important;
+		padding-bottom: 0% !important;
+
+	}
+	.our-service-desktop-section{
+		display: none !important;
+	}
+	/* .portfolio-description .links {
+		font-size: 14px !important;
+	} */
+	.section-title .mt-30{
+		text-align: center !important;
+
+	}
+	.btn.btn-lg {
+		padding: 16px 13px !important;
+	}
+	.btn-our-work{
+		margin-top: 10px !important;
+	}
+	.panel-group .mt-30{
+		text-align: center !important;
+	}
+
+	.payment-img{
+		content: url("../images/portfolio/grid/payments_square.jpg");
+	}
+	.omaxx-img{
+		content: url("../images/portfolio/grid/omaxx_square.jpg");
+	}
+
+	.contacts-section{
+		margin-left: 15% !important;
+	}
+	.our-service-mobile-view-sub-section{
+		font-size: 22px !important;
+	}
+	.contact-us-sec{
+		margin-bottom: 10px !important;
+	}
+	.loader{
+		left: 60% !important;
+	}
+			
 }
 
 @media (max-width:320px){
