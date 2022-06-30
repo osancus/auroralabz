@@ -1,3 +1,12 @@
+@media (min-width:1199px){
+		/* todo : hide mobile view of Our service section */
+		.our-service-mob-section{
+			display: none !important;
+		}
+		.our-service-desktop-section{
+			display: block !important;
+		}
+}
 @media (max-width:1199px){
     .hero-text h1{font-size:74px;}
     .hero-text h2 {font-size: 55px;}
@@ -200,6 +209,14 @@
   .menu-overlay .menu ul ul {margin-top: 20px;}
   .menu-btn {right: 0;top:0;}
 	.menu-overlay .menu ul li {float: none;margin-bottom: 50px;width: 100%;border-bottom: 1px solid #575757;}
+	/* todo : hide mobile view of Our service section */
+	.our-service-mob-section{
+		display: none !important;
+
+	}
+	.our-service-desktop-section{
+		display: block !important;
+	}
 }
 
 @media (min-width:1024px) and (max-width:1199px){
@@ -247,7 +264,14 @@
 	.btn-dark{
 		margin-top: 74% !important;
 	}
+	/* todo : hide mobile view of Our service section */
+	.our-service-mob-section{
+		display: none !important;
 
+	}
+	.our-service-desktop-section{
+		display: block !important;
+	}
 
 }
 
@@ -572,7 +596,7 @@
 		/* tablet responsive screen  */
 		.Agency-Title{
 			line-height: 1.08 !important;
-			font-size: 45px !important;
+			font-size: 43px !important;
 			font-weight: bold !important;
 			margin-block-start: 0.67em !important;
    			margin-block-end: 0.67em !important;
@@ -652,6 +676,17 @@
 		.col-sm-4 img{
 			height: 100% !important;
 		}
+
+			/* todo : hide mobile view of Our service section */
+		.our-service-mob-section{
+			display: block !important;
+
+		}
+		.our-service-desktop-section{
+			display: none !important;
+		}
+
+
 
 }
 
@@ -1042,7 +1077,20 @@
 	}
 	.section-title p{
 		text-align: justify !important;
+		margin: 0rem 1rem 0rem 1rem !important;
+
 	}
+	
+	/* todo : hide mobile view of Our service section */
+	.our-service-mob-section{
+		display: block !important;
+		padding-bottom: 0% !important;
+
+	}
+	.our-service-desktop-section{
+		display: none !important;
+	}
+			
 }
 
 @media (max-width:320px){
