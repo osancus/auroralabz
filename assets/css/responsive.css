@@ -701,6 +701,9 @@
 		.loader{
 		left: 55% !important;
 		}
+		.cbp-item-off{
+			display: none !important;	
+		}
 
 
 }
