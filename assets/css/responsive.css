@@ -680,10 +680,15 @@
 			/* todo : hide mobile view of Our service section */
 		.our-service-mob-section{
 			display: block !important;
+		padding-bottom: 0% !important;
+
 
 		}
 		.our-service-desktop-section{
 			display: none !important;
+		}
+		.section-title{
+			text-align: center !important;
 		}
 
 
@@ -1060,6 +1065,7 @@
 	}
 	.relative{
 		padding-bottom: 0px !important;
+		padding-top: 40px !important;
 	}
 
 	.btn-dark{
@@ -1092,6 +1098,19 @@
 	}
 	.portfolio-description .links {
 		font-size: 14px !important;
+	}
+	.section-title .mt-30{
+		text-align: center !important;
+
+	}
+	.btn.btn-lg {
+		padding: 16px 13px !important;
+	}
+	.btn-our-work{
+		margin-top: 10px !important;
+	}
+	.panel-group .mt-30{
+		text-align: center !important;
 	}
 			
 }

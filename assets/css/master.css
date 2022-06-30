@@ -3658,7 +3658,7 @@ fieldset[disabled] .btn-default.active {
 .btn-color {
   color: #fff;
   background-color: #1ca7ec;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .btn-color:hover,
