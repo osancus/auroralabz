@@ -24,6 +24,34 @@
     };
   </script>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('fLyw3_KzhDfbuaUb_');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // these IDs from the previous steps
+        emailjs.sendForm('service_pygzszx', 'template_a3ftsvj', this)
+          .then(function () {
+            alert('Your message has been sent!');
+            document.getElementById('name').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById('subject').value = "";
+            document.getElementById('message').value = "";
+          }, function (error) {
+            console.log('FAILED...', error);
+            alert('Message sent failed!');
+          });
+      });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -93,12 +121,14 @@
           </ul>
         </div>
         <ul class="social-media">
-          <li><a href="#" class="icofont icofont-twitter"></a></li>
-          <li><a href="#" class="icofont icofont-instagram"></a></li>
-          <li><a href="#" class="icofont icofont-linkedin"></a></li>
+          <li><a href="https://twitter.com/auroralabz" href="_target" class="icofont icofont-twitter"></a></li>
+          <li><a href="https://www.instagram.com/auroralabz" href="_target" class="icofont icofont-instagram"></a>
+          </li>
+          <li><a href="https://www.linkedin.com/company/auroralabz" href="_target" class="icofont icofont-linkedin"></a>
+          </li>
+          <!-- <br />
           <br />
-          <br />
-          <p><a style="color: white" href="#">EN</a> | <a style="color: white" href="#">FI</a></p>
+          <p><a style="color: white" href="#">EN</a> | <a style="color: white" href="#">FI</a></p> -->
         </ul>
       </div>
       <!-- End Side Menu -->
@@ -133,29 +163,6 @@
 
               <!-- LAYER NR. 1 -->
               <div class="hero-text-wrap dark-overlay-bg">
-                <!-- <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-1"
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                  data-y="['middle','middle','middle','middle']" data-voffset="['-150','-150','-150','-100']"
-                  data-fontsize="['30','30','30','25']" data-lineheight="['40','40','40','30']" data-width="none"
-                  data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                  data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"x:-200px;skX:85px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                  data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]"
-                  data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
-                  style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:5px;">
-                  One Page Parallax</div> -->
-
-                <!-- LAYER NR. 2 -->
-                <!-- <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-2"
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                  data-y="['middle','middle','middle','middle']" data-voffset="['-30','-30','-30','-30']"
-                  data-fontsize="['150','150','100','50']" data-lineheight="['160','160','110','60']" data-width="none"
-                  data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                  data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"x:200px;skX:-85px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                  data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]"
-                  data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
-                  style="font-family: 'Raleway', sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:20px;">
-                  Spyder</div> -->
-
 
                 <div class="tp-caption Agency-Title tp-resizeme" id="slide-2971-layer-2"
                   data-x="['center','center','center','center']" data-hoffset="['-20','0','0','0']"
@@ -168,19 +175,6 @@
                   style="z-index: 8; white-space: nowrap;text-transform:uppercase;font-family: 'Raleway', sans-serif; text-shadow: 1px 1px 0px rgba(0,0,0, 0.3)">
                   Enabling A<br /> Decentralised Future
                 </div>
-
-
-                <!-- LAYER NR. 3 -->
-                <!-- <div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-3"
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                  data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','50']"
-                  data-fontsize="['24','24','20','10']" data-lineheight="['28','28','24','20']" data-width="none"
-                  data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                  data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"x:-200px;skX:85px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":2000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                  data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                  data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                  style="font-family: 'Raleway', sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:9px;">
-                  New HTML Templates Generation</div> -->
 
                 <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3045-layer-1"
                   data-x="['center','center','center','center']" data-hoffset="['-65','0','0','0']"
@@ -195,46 +189,6 @@
                   build
                   the future of <span style="font-family:sans-serif;">web 3.0</span>
                 </div>
-
-
-
-
-                <!-- LAYER NR. 4 -->
-                <!-- <div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-4"
-                  data-x="['center','center','center','center']" data-hoffset="['-120','-120','-120','50']"
-                  data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-                  data-width="none" data-height="none" data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                  data-type="button" data-basealign="slide" data-responsive_offset="on"
-                  data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"x:-200px;skX:85px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":2000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                  data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                  data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><a
-                    href="works.html" class="btn btn-lg btn-light-outline btn-default">Learn More</a></div> -->
-
-                <!-- LAYER NR. 5 -->
-                <!-- <div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-3045-layer-5"
-                  data-x="['center','center','center','center']" data-hoffset="['100','100','100','50']"
-                  data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','120']"
-                  data-width="none" data-height="none" data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                  data-type="button" data-basealign="slide" data-responsive_offset="on"
-                  data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"x:200px;skX:-85px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":2000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                  data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                  data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><a href="#"
-                    class="btn btn-lg btn-color-outline btn-default">Buy Template</a></div> -->
-
-                <!-- LAYER NR. 6 -->
-                <!-- <div class="tp-caption rev-scroll-btn" id="slide-3238-layer-13"
-                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                  data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']" data-width="35"
-                  data-height="55" data-whitespace="nowrap" data-type="button"
-                  data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
-                  data-basealign="slide" data-responsive_offset="on" data-responsive="off"
-                  data-frames='[{"from":"y:-50px;opacity:0;","speed":1500,"to":"o:1;","delay":800,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-                  data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                  data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                  style="z-index: 19; min-width: 35px; max-width: 35px; max-width: 55px; max-width: 55px; white-space: nowrap; font-weight: 400;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:3px;border-radius:23px 23px 23px 23px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                  <span>
-                  </span>
-                </div> -->
 
               </div>
 
@@ -268,20 +222,15 @@
           <div class="col-md-4">
             <div class="feature-box text-right mb-50 wow fadeInRight" data-wow-delay="0.1s">
               <i class="icofont icofont-finger-print font-40px"></i>
-              <h3 class="mt-0 font-600"><a href="#">Self-Sovereign Identity</a></h3>
+              <h3 class="mt-0 font-600"><a>Self-Sovereign Identity</a></h3>
               <p class="font-400">Engage with decentralised identity for your ecosystem and plug into the identity layer
                 of web3.0.</p>
 
             </div>
-            <!-- <div class="feature-box text-right mb-50 wow fadeInRight" data-wow-delay="0.2s" style="margin-right: 20%; ">
-              <i class="icofont icofont-terminal font-40px"></i>
-              <h3 class="mt-0 font-600">Software Development</h3>
-              <p class="font-400">Robust scalable APIs, DApps, and mobile apps give your business an unfair advantage.
-              </p>
-            </div> -->
+
             <div class="feature-box text-right pt-120 mb-50 wow fadeInRight" data-wow-delay="0.3s">
               <i class="icofont icofont-bitcoin font-40px"></i>
-              <h3 class="mt-0 font-600"><a href="#">Asset Tokenization</a></h3>
+              <h3 class="mt-0 font-600"><a>Asset Tokenization</a></h3>
               <p class="font-400">Create value by harnessing smart contracts power. Enables security, utility and
                 digital ownership.</p>
             </div>
@@ -292,19 +241,14 @@
           <div class="col-md-4">
             <div class="feature-box text-left mb-50 wow fadeInLeft" data-wow-delay="0.5s">
               <i class="icofont icofont-people font-40px"></i>
-              <h3 class="mt-0 font-600"><a href="#">Offshore teams </a></h3>
+              <h3 class="mt-0 font-600"><a>Offshore teams </a></h3>
               <p class="font-300">Build a low-cost yet competitive technical team for building your software
                 development.</p>
             </div>
-            <!-- <div class="feature-box text-left mb-50 wow fadeInLeft" data-wow-delay="0.6s" style="margin-left: 20%;">
-              <i class="icofont icofont-layers font-40px"></i>
-              <h3 class="mt-0 font-600">Layer-2 Solutions</h3>
-              <p class="font-300">Expand your horizons by enabling L2 scalability for your transactions to reduce the
-                gas fee.</p>
-            </div> -->
+
             <div class="feature-box text-left pt-120 mb-50 wow fadeInLeft" data-wow-delay="0.7s">
               <i class="icofont icofont-bank font-40px"></i>
-              <h3 class="mt-0 font-600"><a href="#">Decentralised Finance</a></h3>
+              <h3 class="mt-0 font-600"><a>Decentralised Finance</a></h3>
               <p class="font-300">Bring innovation to your financial products and services with blockchains. Unlock a
                 new economic realm.</p>
             </div>
@@ -315,60 +259,67 @@
     <!--== Who We Are End ==-->
 
     <!--== Who We Are Start ==-->
-  <div class="white-bg pt-120 pb-120 our-service-mob-section" id="feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 centerize-col text-center">
-          <div class="section-title">
-            <h4 class="default-color">What We Offer</h4>
-            <h1>Our Services</h1>
-            <p>
-              We provide a full suite of tactical services for projects and companies to help them take their
-              software
-              solutions & decentralised ecosystems from proof-of-concept to production. We take pride in working with
-              open
-              source and closed source projects.
-            </p>
+    <div class="white-bg pt-120 pb-120 our-service-mob-section" id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 centerize-col text-center">
+            <div class="section-title">
+              <h4 class="default-color">What We Offer</h4>
+              <h1>Our Services</h1>
+              <p>
+                We provide a full suite of tactical services for projects and companies to help them take their
+                software
+                solutions & decentralised ecosystems from proof-of-concept to production. We take pride in working with
+                open
+                source and closed source projects.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row mt-50">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-         <div class="feature-box text-center xs-mb-30 sm-mb-30 feature-box-default-bg light-border center-feature wow fadeInLeft" data-wow-delay="0.1s">
-          <i class="icofont icofont-finger-print font-40px"></i>
-          	<h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Self-Sovereign Identity</h4>
-          	<p class="font-400">Engage with decentralised identity for your ecosystem and plug into the identity layer
-              of web3.0.</p>
+        <div class="row mt-50">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="feature-box text-center xs-mb-30 sm-mb-30 feature-box-default-bg light-border center-feature wow fadeInLeft"
+              data-wow-delay="0.1s">
+              <i class="icofont icofont-finger-print font-40px"></i>
+              <h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Self-Sovereign Identity</h4>
+              <p class="font-400">Engage with decentralised identity for your ecosystem and plug into the identity layer
+                of web3.0.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-         <div class="feature-box text-center xs-mb-30 sm-mb-30 feature-box-default-bg light-border center-feature wow fadeInUp" data-wow-delay="0.2s">
-          <i class="icofont icofont-bitcoin font-40px"></i>
-          	<h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Asset Tokenization</h4>
-          	<p class="font-400">Create value by harnessing smart contracts power. Enables security, utility and
-              digital ownership.</p>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="feature-box text-center xs-mb-30 sm-mb-30 feature-box-default-bg light-border center-feature wow fadeInUp"
+              data-wow-delay="0.2s">
+              <i class="icofont icofont-bitcoin font-40px"></i>
+              <h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Asset Tokenization</h4>
+              <p class="font-400">Create value by harnessing smart contracts power. Enables security, utility and
+                digital ownership.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-         <div class="feature-box text-center xs-mb-30 feature-box-default-bg light-border center-feature wow fadeInDown" data-wow-delay="0.3s">
-          <i class="icofont icofont-people font-40px"></i>
-          	<h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Offshore teams</h4>
-          	<p class="font-400">Build a low-cost yet competitive technical team for building your software
-              development.</p>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="feature-box text-center xs-mb-30 feature-box-default-bg light-border center-feature wow fadeInDown"
+              data-wow-delay="0.3s">
+              <i class="icofont icofont-people font-40px"></i>
+              <h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Offshore teams</h4>
+              <p class="font-400">Build a low-cost yet competitive technical team for building your software
+                development.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-         <div class="feature-box text-center feature-box-default-bg light-border center-feature wow fadeInRight" data-wow-delay="0.4s">
-          <i class="icofont icofont-bank font-40px"></i>
-          	<h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Decentralised Finance</h4>
-          	<p class="font-400">Bring innovation to your financial products and services with blockchains. Unlock a
-              new economic realm.</p>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="feature-box text-center feature-box-default-bg light-border center-feature wow fadeInRight"
+              data-wow-delay="0.4s">
+              <i class="icofont icofont-bank font-40px"></i>
+              <h4 class="mt-0 font-600 our-service-mobile-view-sub-section">Decentralised Finance</h4>
+              <p class="font-400">Bring innovation to your financial products and services with blockchains. Unlock a
+                new economic realm.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--== Who We Are End ==-->
+    <!--== Who We Are End ==-->
 
     <!--== About Company Start ==-->
     <div class="white-bg pt-120 pb-120 relative" id="about">
@@ -393,8 +344,7 @@
                 production.
               </p>
               <p class="mt-30">
-                <a class="btn btn-color btn-md btn-default btn-our-work">See Our Work</a>
-                <!-- <a class="btn btn-dark btn-md btn-default">See Our Work</a> -->
+                <a href="#work" class="btn btn-color btn-md btn-default btn-our-work page-scroll">See Our Work</a>
               </p>
             </div>
           </div>
@@ -459,9 +409,7 @@
               <div data-filter=".defi" class="cbp-filter-item">
                 DeFi & Asset Tokenization
               </div>
-              <!-- <div data-filter=".asset" class="cbp-filter-item">
-               
-              </div> -->
+
             </div>
           </div>
         </div>
@@ -473,7 +421,7 @@
 
               <!-- SSI -->
               <div class="cbp-item ssi col-md-4 col-sm-6">
-                <a href="#">
+                <a href="works.html#zada-wallet">
                   <div class="portfolio gallery-image-hover text-center">
                     <div class="folio-overlay"></div>
                     <img class="zoom" src="assets/images/portfolio/grid/zada-wallet.jpg" alt="">
@@ -482,7 +430,9 @@
 
                         <h3 class="portfolio-title mt-0">ZADA Wallet</h3>
                         <hr class="portfolio-line" />
-                        <h6 class="links">For the love of good food — award-winning retail digital services</h6>
+                        <h6 class="links">Enabling digital trust by utilizing mobile wallets for digital identities and
+                          digital data verification
+                        </h6>
                         <h4 class="portfolio-readmore">READ MORE</h4>
                       </div>
                     </div>
@@ -495,7 +445,7 @@
 
 
             <div class="cbp-item ssi col-md-4 col-sm-6">
-              <a href="#">
+              <a href="works.html#vaccify">
                 <div class="portfolio gallery-image-hover text-center">
                   <div class="folio-overlay"></div>
                   <img src="assets/images/portfolio/grid/vaccify.jpg" alt="">
@@ -503,7 +453,7 @@
                     <div class="portfolio-description">
                       <h3 class="portfolio-title mt-0">Vaccfiy</h3>
                       <hr class="portfolio-line" />
-                      <h6 class="links">For the love of good food — award-winning retail digital services</h6>
+                      <h6 class="links">Allowing seamless travel amid pandamic by COVIDPass identity credentials</h6>
                       <h4 class="portfolio-readmore">READ MORE</h4>
                     </div>
                   </div>
@@ -512,7 +462,7 @@
             </div>
 
             <div class="cbp-item ssi col-md-4 col-sm-6">
-              <a href="#">
+              <a href="works.html#ourwork">
                 <div class="portfolio gallery-image-hover text-center">
                   <div class="folio-overlay"></div>
                   <img class="zoom" src="assets/images/portfolio/grid/identity.jpg" alt="">
@@ -520,17 +470,14 @@
                     <div class="portfolio-description">
                       <h3 class="portfolio-title mt-0">ZADA Identity Network</h3>
                       <hr class="portfolio-line" />
-                      <h6 class="links">For the love of good food — award-winning retail digital services</h6>
+                      <h6 class="links">Securing exchange of personal data and
+                        identities by using decentralized identity networks </h6>
                       <h4 class="portfolio-readmore">READ MORE</h4>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
-
-
-
-
             <!-- SSI -->
 
 
@@ -538,15 +485,16 @@
 
             <!-- DeFi -->
             <div class="cbp-item defi col-md-6 col-sm-6">
-              <a href="#">
+              <a href="works.html#onehypernet">
                 <div class="portfolio gallery-image-hover text-center">
                   <div class="folio-overlay"></div>
                   <img class="payment-img" src="assets/images/portfolio/grid/payments.jpg" alt="">
                   <div class="portfolio-wrap">
                     <div class="portfolio-description">
-                      <h3 class="portfolio-title mt-0">OHN Platform</h3>
+                      <h3 class="portfolio-title mt-0">OneHypernet</h3>
                       <hr class="portfolio-line" />
-                      <h6 class="links">For the love of good food — award-winning retail digital services</h6>
+                      <h6 class="links">Connecting the world’s foreign exchange markets – banks, corporates, and payment
+                        service providers on a unified ecosystem</h6>
                       <h4 class="portfolio-readmore">READ MORE</h4>
                     </div>
                   </div>
@@ -558,7 +506,7 @@
 
             <!-- Asset Tokenization -->
             <div class="cbp-item asset defi col-md-6 col-sm-6">
-              <a href="#">
+              <a href="works.html#omaxx">
                 <div class="portfolio gallery-image-hover text-center">
                   <div class="folio-overlay"></div>
                   <img class="omaxx-img" src="assets/images/portfolio/grid/omaxx.jpg" alt="">
@@ -566,7 +514,8 @@
                     <div class="portfolio-description">
                       <h3 class="portfolio-title mt-0">OMAXX</h3>
                       <hr class="portfolio-line" />
-                      <h6 class="links">For the love of good food — award-winning retail digital services</h6>
+                      <h6 class="links">Enabling fundraising and equity crowdfunding by decentralised secondary markets
+                      </h6>
                       <h4 class="portfolio-readmore">READ MORE</h4>
                     </div>
                   </div>
@@ -701,12 +650,12 @@
                         <li>Growth and Humble Mindset</li>
                         <li>Innovate and Simplify</li>
                         <li>Transparency and Genuinity</li>
-                        <li>Curious at Heart</li>
-                        <li>Deep Dive</li>
+                        <li>Curiousity at Heart</li>
+                        <li>Deep Diving Knack</li>
                         <li>Relentless High Standards</li>
                         <li>Action over words</li>
                         <li>Backbone to Disagree and Commit</li>
-                        <li>Never settle</li>
+                        <li>Never settling</li>
                       </ul>
                       <div>
                       </div>
@@ -781,10 +730,10 @@
               </div>
               <h3 class="mt-0">Locations</h3>
               <div class="dis">
-                Helsinki, Finland
+                Yliopistonkatu 4, 00100 Helsinki, Finland
               </div>
               <div class="dis">
-                Lahore, Pakistan
+                22-N Johar Town, Lahore, Pakistan
               </div>
             </div>
             <div class="icon-text feature-box-2 mb-30 clearfix" style="padding-top: 2%; padding-bottom: 2%;">
@@ -796,7 +745,7 @@
                 +358 401 8383 73
               </div>
               <div class="dis">
-                +92 333 4674 399
+                +92 331 4256 203
               </div>
             </div>
             <div class="icon-text feature-box-2 mb-30 clearfix">
@@ -808,19 +757,6 @@
                 <a href="mailto:hello@auroralabz.com">hello@auroralabz.com</a>
               </div>
             </div>
-            <!-- <div class="icon-text feature-box-2 mb-30 clearfix">
-                <div class="icon">
-                  <i class="icofont icofont-ui-social-link font-30px white-color"></i>
-                </div>
-                <h3 class="mt-0">Follow Us</h3>
-                <div class="dis">
-
-                  <a style="margin-right: 1%;" href="#" class="icofont icofont-twitter"></a>
-                  <a style="margin-right: 1%;" href="#" class="icofont icofont-instagram"></a>
-                  <a href="#" class="icofont icofont-linkedin"></a>
-
-                </div>
-              </div> -->
           </div>
 
         </div>
@@ -832,14 +768,14 @@
           <div class="row" style="margin-left: 4%; margin-right: 4%; margin-top: 4%; margin-bottom: 4%;">
             <div class="col-md-4 col-sm-4 text-center">
 
-              <img style="border-radius: 50%; height: 128px;" src="./assets/images/bd.jpg" alt="Avatar"
+              <img style="border-radius: 50%; height: 120px;" src="./assets/images/bd.jpg" alt="Avatar"
                 style="width:100px">
-              <h4 class="mt-0 line-height-50">John Smith</h4>
+              <h4 class="mt-0 line-height-50">Get in touch</h4>
             </div>
 
             <div class="col-md-4 col-sm-4 text-center">
               <i class="icofont icofont-ui-calendar font-30px" style="color: black;"></i>
-              <h5 class="mt-20">Schedule a discovery call with <span style="color: #15acfb;">John</span></h5>
+              <h5 class="mt-20">Schedule a discovery call with our</h5>
               <p class="mt-10 font-200">Head Of Business Development</p>
             </div>
 
@@ -859,8 +795,7 @@
     padding:0 10px; ">OR</span></p>
 
           <div class="row" style="margin-left: 4%; margin-right: 4%; margin-bottom: 4%; margin-top: -4%;">
-            <form name="contact-form" id="contact-form" action="php/contact.php" method="POST"
-              class="contact-form-style-01">
+            <form name="contact-form" id="contact-form" class="contact-form-style-01">
               <div class="messages"></div>
               <div class="row mt-50">
                 <div class="col-md-12">
@@ -939,13 +874,14 @@
             <div style="margin: 1%; font-size:x-small">
               AURORALABZ is a registered trademark of AuroraLabz LLC Oy in the European Union and
               various
-              other jurisdictions.<br /> Privacy policy In <a href="#" style="color:lightgray;">English</a> / <a
-                href="#" style="color:lightgray;">Suomeksi</a>
+              other jurisdictions.<br /> Privacy policy In <a href="terms.html" style="color:lightgray;">English</a>
             </div>
             <ul class="social-media mt-30 float-none">
-              <li><a href="#" class="icofont icofont-twitter"></a></li>
-              <li><a href="#" class="icofont icofont-instagram"></a></li>
-              <li><a href="#" class="icofont icofont-linkedin"></a></li>
+              <li><a href="https://twitter.com/auroralabz" href="_target" class="icofont icofont-twitter"></a></li>
+              <li><a href="https://www.instagram.com/auroralabz" href="_target" class="icofont icofont-instagram"></a>
+              </li>
+              <li><a href="https://www.linkedin.com/company/auroralabz" href="_target"
+                  class="icofont icofont-linkedin"></a></li>
             </ul>
           </div>
         </div>
